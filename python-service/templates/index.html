@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Space Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Space Tracker</h1>
+        <p>Free Spaces: {{ free_spaces }}</p>
+        <p>Total Spaces: {{ total_spaces }}</p>
+    </div>
+    <script>
+        // Optional: Auto-refresh the page every 5 seconds
+        setInterval(() => {
+            location.reload();
+        }, 5000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Smart-Park",
+    "slug": "Smart-Park",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need access to your location to show nearby parking spaces.",
+        "NSLocationAlwaysUsageDescription": "We need access to your location in the background to track nearby parking spaces."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.rivankaryash.SmartPark",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "INTERNET",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "21517250-a710-473f-ac0a-5b2302ccfe77"
+      }
+    }
+  }
+}
