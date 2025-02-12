@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => {
     const fetchParkingData = async () => {
       try {
-        const response = await axios.get('http://13.60.62.112:4000/api/parking-data');
+        const response = await axios.get('http://51.20.185.217:4000/api/parking-data');
         const formattedData = response.data.reduce((acc, camera) => {
           acc[camera.camera_id] = camera;
           return acc;
